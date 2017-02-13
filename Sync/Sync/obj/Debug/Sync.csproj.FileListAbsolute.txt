@@ -1,0 +1,14 @@
+C:\Users\Stefan\Desktop\3chit\SEW\Sync\Sync\Sync\Sync\bin\Debug\Sync.exe.config
+C:\Users\Stefan\Desktop\3chit\SEW\Sync\Sync\Sync\Sync\bin\Debug\Sync.exe
+C:\Users\Stefan\Desktop\3chit\SEW\Sync\Sync\Sync\Sync\bin\Debug\Sync.pdb
+C:\Users\Stefan\Desktop\3chit\SEW\Sync\Sync\Sync\Sync\obj\Debug\Sync.csprojResolveAssemblyReference.cache
+C:\Users\Stefan\Desktop\3chit\SEW\Sync\Sync\Sync\Sync\obj\Debug\MainWindow.g.cs
+C:\Users\Stefan\Desktop\3chit\SEW\Sync\Sync\Sync\Sync\obj\Debug\App.g.cs
+C:\Users\Stefan\Desktop\3chit\SEW\Sync\Sync\Sync\Sync\obj\Debug\Sync_MarkupCompile.cache
+C:\Users\Stefan\Desktop\3chit\SEW\Sync\Sync\Sync\Sync\obj\Debug\Sync_MarkupCompile.lref
+C:\Users\Stefan\Desktop\3chit\SEW\Sync\Sync\Sync\Sync\obj\Debug\MainWindow.baml
+C:\Users\Stefan\Desktop\3chit\SEW\Sync\Sync\Sync\Sync\obj\Debug\Sync.g.resources
+C:\Users\Stefan\Desktop\3chit\SEW\Sync\Sync\Sync\Sync\obj\Debug\Sync.Properties.Resources.resources
+C:\Users\Stefan\Desktop\3chit\SEW\Sync\Sync\Sync\Sync\obj\Debug\Sync.csproj.GenerateResource.Cache
+C:\Users\Stefan\Desktop\3chit\SEW\Sync\Sync\Sync\Sync\obj\Debug\Sync.exe
+C:\Users\Stefan\Desktop\3chit\SEW\Sync\Sync\Sync\Sync\obj\Debug\Sync.pdb
