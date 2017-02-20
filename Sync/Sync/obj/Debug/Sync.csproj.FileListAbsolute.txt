@@ -12,3 +12,13 @@ C:\Users\Stefan\Desktop\3chit\SEW\Sync\Sync\Sync\Sync\obj\Debug\Sync.Properties.
 C:\Users\Stefan\Desktop\3chit\SEW\Sync\Sync\Sync\Sync\obj\Debug\Sync.csproj.GenerateResource.Cache
 C:\Users\Stefan\Desktop\3chit\SEW\Sync\Sync\Sync\Sync\obj\Debug\Sync.exe
 C:\Users\Stefan\Desktop\3chit\SEW\Sync\Sync\Sync\Sync\obj\Debug\Sync.pdb
+C:\Users\D01 D2\Sync\Sync\Sync\bin\Debug\Sync.exe.config
+C:\Users\D01 D2\Sync\Sync\Sync\obj\Debug\Sync.exe
+C:\Users\D01 D2\Sync\Sync\Sync\obj\Debug\Sync.pdb
+C:\Users\D01 D2\Sync\Sync\Sync\obj\Debug\Sync.csprojResolveAssemblyReference.cache
+C:\Users\D01 D2\Sync\Sync\Sync\obj\Debug\MainWindow.g.cs
+C:\Users\D01 D2\Sync\Sync\Sync\obj\Debug\App.g.cs
+C:\Users\D01 D2\Sync\Sync\Sync\obj\Debug\Sync_MarkupCompile.cache
+C:\Users\D01 D2\Sync\Sync\Sync\obj\Debug\Sync_MarkupCompile.lref
+C:\Users\D01 D2\Sync\Sync\Sync\obj\Debug\MainWindow.baml
+C:\Users\D01 D2\Sync\Sync\Sync\obj\Debug\Sync.g.resources
