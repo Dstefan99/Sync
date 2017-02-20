@@ -24,5 +24,15 @@ namespace Sync
         {
             InitializeComponent();
         }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            Sync_Browser.Navigate("http://www.google.com");
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            Sync_Browser.Navigate("http://www.google.com");
+        }
     }
 }

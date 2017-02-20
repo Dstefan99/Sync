@@ -5,16 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Sync"
         mc:Ignorable="d"
-        Title="MainWindow" Height="676.569" Width="987.762">
+        Title="MainWindow" Height="676.569" Width="987.762" Loaded="Window_Loaded">
     <Grid Background="LightGray">
-        <WebBrowser HorizontalAlignment="Left" Height="555" Margin="0,53,0,0" VerticalAlignment="Top" Width="980"/>
+        <WebBrowser x:Name="Sync_Browser" Margin="-2,53,2,38"/>
         <TabControl x:Name="tabControl" HorizontalAlignment="Left" Height="38" VerticalAlignment="Top" Width="980" Margin="0,608,0,0">
             <TabItem Header="TabItem" Margin="-2,-2,-43,0">
                 <Grid Background="#FFE5E5E5"/>
             </TabItem>
         </TabControl>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="0,30,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="706" BorderThickness="2"/>
-        <Button x:Name="button" Content="Search" HorizontalAlignment="Left" Margin="706,30,0,0" VerticalAlignment="Top" Width="75" Height="23"/>
+        <TextBox x:Name="textBox" Height="23" Margin="0,30,75,0" TextWrapping="Wrap" VerticalAlignment="Top" BorderThickness="2"/>
+        <Button x:Name="button" Content="Search" Margin="905,30,0,0" VerticalAlignment="Top" Height="23" Click="button_Click"/>
 
     </Grid>
 </Window>
