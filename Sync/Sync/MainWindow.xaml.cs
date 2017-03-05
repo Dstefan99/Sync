@@ -20,19 +20,37 @@ namespace Sync
     /// </summary>
     public partial class MainWindow : Window
     {
+
         public MainWindow()
         {
             InitializeComponent();
         }
-
+       
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            Sync_Browser.Navigate("http://www.google.com");
+            
+            Sync_Browser.Navigate(textBox_suchbox.Text);
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             Sync_Browser.Navigate("http://www.google.com");
+        }
+
+        private void button_Back(object sender, RoutedEventArgs e)
+        {
+            Sync_Browser.GoBack();
+        }
+
+        private void button_Click_Vor(object sender, RoutedEventArgs e)
+        {
+            Sync_Browser.GoForward();
+        }
+
+        private void Sync_Browser_Navigating(object sender, NavigatingCancelEventArgs e)
+        {
+            textBox_suchbox.Text = e.Uri.OriginalString;
+
         }
     }
 }

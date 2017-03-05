@@ -5,16 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Sync"
         mc:Ignorable="d"
-        Title="MainWindow" Height="676.569" Width="987.762" Loaded="Window_Loaded">
+        Title="Sync" Height="676.569" Width="987.762" Loaded="Window_Loaded">
     <Grid Background="LightGray">
-        <WebBrowser x:Name="Sync_Browser" Margin="-2,53,2,38"/>
+
+        <WebBrowser x:Name="Sync_Browser" Margin="0,53,0,38" Navigating="Sync_Browser_Navigating"/>
         <TabControl x:Name="tabControl" HorizontalAlignment="Left" Height="38" VerticalAlignment="Top" Width="980" Margin="0,608,0,0">
             <TabItem Header="TabItem" Margin="-2,-2,-43,0">
                 <Grid Background="#FFE5E5E5"/>
             </TabItem>
         </TabControl>
-        <TextBox x:Name="textBox" Height="23" Margin="0,30,75,0" TextWrapping="Wrap" VerticalAlignment="Top" BorderThickness="2"/>
+        <TextBox x:Name="textBox_suchbox" Height="23" Margin="0,30,225,0" TextWrapping="Wrap" VerticalAlignment="Top" BorderThickness="2"/>
         <Button x:Name="button" Content="Search" Margin="905,30,0,0" VerticalAlignment="Top" Height="23" Click="button_Click"/>
+        <Button x:Name="button_Zurück" Content="&lt;" Margin="755,30,150,0" VerticalAlignment="Top" Height="23" Click="button_Back"/>
+        <Button x:Name="button_Vor" Content="&gt;" Margin="830,30,75,0" VerticalAlignment="Top" Height="23" Click="button_Click_Vor"/>
 
     </Grid>
 </Window>
