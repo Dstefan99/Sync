@@ -20,37 +20,65 @@ namespace Sync
     /// </summary>
     public partial class MainWindow : Window
     {
-
+     
         public MainWindow()
         {
             InitializeComponent();
         }
-       
+        private void Grid_Loaded(object sender, RoutedEventArgs e)
+        {
+          
+            
+        }
         private void button_Click(object sender, RoutedEventArgs e)
         {
             
-            Sync_Browser.Navigate(textBox_suchbox.Text);
+            WEB.Navigate(textBox_suchbox.Text);
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            Sync_Browser.Navigate("http://www.google.com");
+            WEB.Navigate("http://www.google.com");
         }
 
         private void button_Back(object sender, RoutedEventArgs e)
         {
-            Sync_Browser.GoBack();
+            if (WEB.CanGoBack)
+            {
+                WEB.GoBack();
+            }
+            else
+            {
+                MessageBox.Show("du kannst nicht mehr zurück!");
+            }
+            
         }
 
         private void button_Click_Vor(object sender, RoutedEventArgs e)
         {
-            Sync_Browser.GoForward();
+            if (WEB.CanGoForward)
+            {
+                WEB.GoForward();
+            }
+            else
+            {
+                MessageBox.Show("du kannst nicht mehr vor!");
+            }
         }
 
         private void Sync_Browser_Navigating(object sender, NavigatingCancelEventArgs e)
         {
             textBox_suchbox.Text = e.Uri.OriginalString;
+            
+        }
+
+        private void button_Click_New_Tab(object sender, RoutedEventArgs e)
+        {
+
+          
 
         }
+
+      
     }
 }
