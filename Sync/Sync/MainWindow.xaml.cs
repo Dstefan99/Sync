@@ -33,19 +33,19 @@ namespace Sync
         private void button_Click(object sender, RoutedEventArgs e)
         {
             
-            WEB.Navigate(textBox_suchbox.Text);
+            Sync_Browser.Navigate(textBox_suchbox.Text);
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            WEB.Navigate("http://www.google.com");
+            Sync_Browser.Navigate("http://www.google.com");
         }
 
         private void button_Back(object sender, RoutedEventArgs e)
         {
-            if (WEB.CanGoBack)
+            if (Sync_Browser.CanGoBack)
             {
-                WEB.GoBack();
+                Sync_Browser.GoBack();
             }
             else
             {
@@ -56,9 +56,9 @@ namespace Sync
 
         private void button_Click_Vor(object sender, RoutedEventArgs e)
         {
-            if (WEB.CanGoForward)
+            if (Sync_Browser.CanGoForward)
             {
-                WEB.GoForward();
+                Sync_Browser.GoForward();
             }
             else
             {
@@ -66,19 +66,30 @@ namespace Sync
             }
         }
 
-        private void Sync_Browser_Navigating(object sender, NavigatingCancelEventArgs e)
+           private void Sync_Browser_Navigating_1(object sender, NavigatingCancelEventArgs e)
         {
             textBox_suchbox.Text = e.Uri.OriginalString;
-            
         }
 
+       
         private void button_Click_New_Tab(object sender, RoutedEventArgs e)
         {
+            TabItem tab = new TabItem();
+            tab.Header = "New Tab";
+            Grid grid_web = new Grid();
+            WebBrowser web = new WebBrowser();
+            web.Navigate("http://www.google.com");
+            grid_web.Children.Add(web);
+            tab.Content = grid_web;
 
-          
+            tabControl.Items.Add(tab);
+
+
 
         }
 
       
+
+    
     }
 }

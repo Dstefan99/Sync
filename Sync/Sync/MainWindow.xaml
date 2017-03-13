@@ -12,15 +12,18 @@
         <Button x:Name="button" Content="Search" Margin="905,47,0,0" VerticalAlignment="Top" Height="23" Click="button_Click"/>
         <Button x:Name="button_Zurück" Content="&lt;" Margin="755,47,150,0" VerticalAlignment="Top" Height="23" Click="button_Back"/>
         <Button x:Name="button_Vor" Content="&gt;" Margin="830,47,75,0" VerticalAlignment="Top" Height="23" Click="button_Click_Vor"/>
-        <Button x:Name="button_New_Tab" Content="+" Margin="942,10,10,0" VerticalAlignment="Top" Height="23" Click="button_Click_New_Tab"/>
+        <Button x:Name="button_New_Tab" Content="+" Margin="905,10,0,0" VerticalAlignment="Top" Height="32" Click="button_Click_New_Tab"/>
 
         <TabControl x:Name="tabControl" Margin="0,75,0,0">
-            <TabItem Header="TabItem">
-               
-                <WebBrowser x:Name="WEB" Margin="-2,-2,-2,6"/>
+            <TabItem
+                x:Name="tabItem1" Header="TabItem">
+
+                <WebBrowser x:Name="Sync_Browser" Margin="-2,-2,-2,6" Navigating="Sync_Browser_Navigating_1"/>
+
             </TabItem>
-            
+
         </TabControl>
+
 
 
     </Grid>
