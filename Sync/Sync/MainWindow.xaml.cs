@@ -88,8 +88,16 @@ namespace Sync
 
         }
 
-      
+        private void button_Chronik_Click(object sender, RoutedEventArgs e)
+        {
+           
+        }
 
-    
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            ListViewItem item = new ListViewItem();
+            listView.Items.Add(textBox_suchbox.Text);
+
+        }
     }
 }
