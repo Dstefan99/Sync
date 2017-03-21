@@ -22,3 +22,5 @@ C:\Users\D01 D2\Sync\Sync\Sync\obj\Debug\Sync_MarkupCompile.cache
 C:\Users\D01 D2\Sync\Sync\Sync\obj\Debug\Sync_MarkupCompile.lref
 C:\Users\D01 D2\Sync\Sync\Sync\obj\Debug\MainWindow.baml
 C:\Users\D01 D2\Sync\Sync\Sync\obj\Debug\Sync.g.resources
+C:\Users\Stefan\Desktop\3chit\SEW\Sync\Sync\Sync\Sync\bin\Debug\System.Data.SQLite.dll
+C:\Users\Stefan\Desktop\3chit\SEW\Sync\Sync\Sync\Sync\bin\Debug\System.Data.SQLite.pdb

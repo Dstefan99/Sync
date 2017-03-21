@@ -24,6 +24,7 @@ namespace Sync
         public MainWindow()
         {
             InitializeComponent();
+
         }
         private void Grid_Loaded(object sender, RoutedEventArgs e)
         {
@@ -66,6 +67,7 @@ namespace Sync
             }
         }
 
+
            private void Sync_Browser_Navigating_1(object sender, NavigatingCancelEventArgs e)
         {
             textBox_suchbox.Text = e.Uri.OriginalString;
@@ -87,9 +89,36 @@ namespace Sync
 
 
         }
-
       
+        List<URL> Urls = new List<URL>();
+        public IEnumerable<URL> GetHistory()
+        {
+            UrlHistoryWrapperClass urlhistory = new UrlHistoryWrapperClass();
 
-    
+            UrlHistoryWrapperClass.STATURLEnumerator enumerator =
+                                               urlhistory.GetEnumerator();
+
+            while (enumerator.MoveNext())
+            {
+                string url = enumerator.Current.URL.Replace('\'', ' ');
+                string title = string.IsNullOrEmpty(enumerator.Current.Title)
+                          ? enumerator.Current.Title.Replace('\'', ' ') : "";
+
+                URL U = new URL(url, title, "Internet Explorer");
+
+                Urls.Add(U);
+            }
+
+            
+            enumerator.Reset();
+
+            
+            urlhistory.ClearHistory();
+
+            return Urls;
+        }
+
+
+
     }
 }
