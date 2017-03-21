@@ -38,7 +38,11 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.SQLite">
+<<<<<<< HEAD
       <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\System.Data.SQLite\2005\bin\System.Data.SQLite.dll</HintPath>
+=======
+      <HintPath>C:\Program Files (x86)\System.Data.SQLite\2005\bin\System.Data.SQLite.dll</HintPath>
+>>>>>>> cbdcde567d66449184d337ffb4367b861913855c
     </Reference>
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
@@ -68,6 +72,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Chronik.cs" />
+<<<<<<< HEAD
+=======
+    <Compile Include="Lesezeichen.cs" />
+>>>>>>> cbdcde567d66449184d337ffb4367b861913855c
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>

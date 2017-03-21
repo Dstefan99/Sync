@@ -89,6 +89,7 @@ namespace Sync
 
 
         }
+<<<<<<< HEAD
       
         List<URL> Urls = new List<URL>();
         public IEnumerable<URL> GetHistory()
@@ -120,5 +121,19 @@ namespace Sync
 
 
 
+=======
+
+        private void button_Chronik_Click(object sender, RoutedEventArgs e)
+        {
+           
+        }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            ListViewItem item = new ListViewItem();
+            listView.Items.Add(textBox_suchbox.Text);
+
+        }
+>>>>>>> cbdcde567d66449184d337ffb4367b861913855c
     }
 }

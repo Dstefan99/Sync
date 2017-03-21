@@ -4,17 +4,21 @@
 winexe
 C#
 .cs
-C:\Users\Stefan\Desktop\3chit\SEW\Sync\Sync\Sync\Sync\obj\Debug\
+E:\Dokumente\Sync\Sync\Sync\obj\Debug\
 Sync
 none
 false
 DEBUG;TRACE
-C:\Users\Stefan\Desktop\3chit\SEW\Sync\Sync\Sync\Sync\App.xaml
+E:\Dokumente\Sync\Sync\Sync\App.xaml
 11151548125
 
+<<<<<<< HEAD
 112032312889
+=======
+11-434493377
+>>>>>>> cbdcde567d66449184d337ffb4367b861913855c
 14-921138972
 MainWindow.xaml;
 
-False
+True
 
