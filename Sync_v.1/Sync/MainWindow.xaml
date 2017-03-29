@@ -5,7 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Sync"
         mc:Ignorable="d"
-        Title="Sync" Height="710.569" Width="987.762" Loaded="Window_Loaded">
+        Title="Sync" Height="710.569" Width="987.762" Loaded="Window_Loaded"
+        ResizeMode="CanMinimize"
+        >
     <Grid Background="LightGray">
 
         <TextBox x:Name="textBox_suchbox" Height="23" Margin="0,47,225,0" TextWrapping="Wrap" VerticalAlignment="Top" BorderThickness="2"/>
@@ -24,15 +26,15 @@
 
         </TabControl>
         <Button x:Name="button_Chronik" Content="Chronik" HorizontalAlignment="Left" Margin="863,75,0,0" VerticalAlignment="Top" Width="117" Height="22" Click="button_Chronik_Click"/>
-        <ListView x:Name="listView" HorizontalAlignment="Left" Margin="0,592,0,0" Width="980">
+        <Button x:Name="button1" Content="Lesezeichen hinzufügen" HorizontalAlignment="Left" VerticalAlignment="Top" Width="133" Click="button1_Click"/>
+        <Button x:Name="button_removeBookmark" Content="Lesezeichen entfernen" HorizontalAlignment="Left" Margin="0,20,0,0" VerticalAlignment="Top" Width="133" Click="button_removeBookmark_Click"/>
+        <ListView x:Name="listView_bookmarks" HorizontalAlignment="Left" Height="88" Margin="0,592,0,0" VerticalAlignment="Top" Width="980" MouseDoubleClick="listView_bookmarks_MouseDoubleClick">
             <ListView.View>
                 <GridView>
                     <GridViewColumn/>
                 </GridView>
             </ListView.View>
         </ListView>
-        <Button x:Name="button1" Content="AddBookmark" HorizontalAlignment="Left" VerticalAlignment="Top" Width="108" Click="button1_Click"/>
-        <Button x:Name="button2" Content="RemoveBookmark" HorizontalAlignment="Left" Margin="0,20,0,0" VerticalAlignment="Top" Width="108"/>
 
 
 

@@ -20,7 +20,7 @@ namespace Sync
     /// </summary>
     public partial class MainWindow : Window
     {
-     
+        List<string> removals = new List<string>();
         public MainWindow()
         {
             InitializeComponent();
@@ -95,9 +95,30 @@ namespace Sync
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-            ListViewItem item = new ListViewItem();
-            listView.Items.Add(textBox_suchbox.Text);
+            
+            listView_bookmarks.Items.Add(textBox_suchbox.Text);
 
+            
+        }
+
+        private void button_removeBookmark_Click(object sender, RoutedEventArgs e)
+        {
+            
+
+            foreach (string item in listView_bookmarks.SelectedItems)
+            {
+                removals.Add(item);
+            }
+
+            foreach (string s in removals)
+            {
+                listView_bookmarks.Items.Remove(s);
+            }
+        }
+
+        private void listView_bookmarks_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            Sync_Browser.Navigate(listView_bookmarks.SelectedItem.ToString());
         }
     }
 }
