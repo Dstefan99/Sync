@@ -25,17 +25,20 @@
             </TabItem>
 
         </TabControl>
+        
         <Button x:Name="button_Chronik" Content="Chronik" HorizontalAlignment="Left" Margin="863,75,0,0" VerticalAlignment="Top" Width="117" Height="22" Click="button_Chronik_Click"/>
         <Button x:Name="button1" Content="Lesezeichen hinzufügen" HorizontalAlignment="Left" VerticalAlignment="Top" Width="133" Click="button1_Click"/>
         <Button x:Name="button_removeBookmark" Content="Lesezeichen entfernen" HorizontalAlignment="Left" Margin="0,20,0,0" VerticalAlignment="Top" Width="133" Click="button_removeBookmark_Click"/>
-        <ListView x:Name="listView_bookmarks" HorizontalAlignment="Left" Height="88" Margin="0,592,0,0" VerticalAlignment="Top" Width="980" MouseDoubleClick="listView_bookmarks_MouseDoubleClick">
+        <UserControl>
+        <ListView x:Name="listView_bookmarks" HorizontalAlignment="Left" Height="88" Margin="0,592,0,0" VerticalAlignment="Top" Width="980" MouseDoubleClick="listView_bookmarks_MouseDoubleClick" MouseDown="listView_bookmarks_MouseDown">
             <ListView.View>
                 <GridView>
                     <GridViewColumn/>
                 </GridView>
             </ListView.View>
         </ListView>
-
+        </UserControl>
+        <Button x:Name="button_specialbookmark" Content="Spezielles Bookmark hinzufügen" HorizontalAlignment="Left" Margin="171,0,0,0" VerticalAlignment="Top" Width="182" Click="button_specialbookmark_Click"/>
 
 
     </Grid>

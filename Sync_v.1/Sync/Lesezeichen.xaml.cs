@@ -19,9 +19,23 @@ namespace Sync
     /// </summary>
     public partial class Lesezeichen : Window
     {
+        Bookmark bookmark = new Bookmark();
         public Lesezeichen()
         {
             InitializeComponent();
+            
+        }
+        
+            
+        
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void button_addBookmark_Click(object sender, RoutedEventArgs e)
+        {
+            
         }
     }
 }

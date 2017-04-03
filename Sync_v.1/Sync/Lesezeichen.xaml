@@ -7,6 +7,8 @@
         mc:Ignorable="d"
         Title="Lesezeichen" Height="300" Width="300">
     <Grid>
-        
+        <ListBox x:Name="listBox_Lesezeichen" HorizontalAlignment="Left" Height="243" VerticalAlignment="Top" Width="292" Margin="0,26,0,0"/>
+        <Button x:Name="button" Content="Lesezeichen entfernen" HorizontalAlignment="Left" VerticalAlignment="Top" Width="128" Height="26" Click="button_Click" Margin="164,0,0,0"/>
+        <Button x:Name="button_addBookmark" Content="Lesezeichen hinzufügen" HorizontalAlignment="Left" VerticalAlignment="Top" Width="133" Height="26" Click="button_addBookmark_Click"/>
     </Grid>
 </Window>

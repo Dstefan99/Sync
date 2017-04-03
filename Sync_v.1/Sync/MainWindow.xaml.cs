@@ -21,6 +21,7 @@ namespace Sync
     public partial class MainWindow : Window
     {
         List<string> removals = new List<string>();
+        
         public MainWindow()
         {
             InitializeComponent();
@@ -95,6 +96,8 @@ namespace Sync
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
+            var lesezeichen = listView_bookmarks.SelectedItem as Bookmark;
+
             
             listView_bookmarks.Items.Add(textBox_suchbox.Text);
 
@@ -120,5 +123,27 @@ namespace Sync
         {
             Sync_Browser.Navigate(listView_bookmarks.SelectedItem.ToString());
         }
+
+        private void button_specialbookmark_Click(object sender, RoutedEventArgs e)
+        {
+            
+            var doc = Sync_Browser.Document as mshtml.HTMLDocument;
+            if (doc != null)
+            {
+                var currentSelection = doc.selection;
+                if (currentSelection != null)
+                {
+                    var selectionRange = currentSelection.createRange();
+                    if (selectionRange != null)
+                    {
+                        var selectionText = selectionRange.Text;
+                        
+                        MessageBox.Show("Dieser Text wurde gespeichert: " + selectionText);
+                    }
+                }
+            }
+        }
+
+       
     }
 }
