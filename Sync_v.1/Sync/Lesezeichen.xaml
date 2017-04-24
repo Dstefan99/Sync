@@ -5,10 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Sync"
         mc:Ignorable="d"
-        Title="Lesezeichen" Height="300" Width="300">
+        Title="Lesezeichen" Height="371.548" Width="404.184"
+        ResizeMode="CanMinimize"
+        >
     <Grid>
-        <ListBox x:Name="listBox_Lesezeichen" HorizontalAlignment="Left" Height="243" VerticalAlignment="Top" Width="292" Margin="0,26,0,0"/>
-        <Button x:Name="button" Content="Lesezeichen entfernen" HorizontalAlignment="Left" VerticalAlignment="Top" Width="128" Height="26" Click="button_Click" Margin="164,0,0,0"/>
-        <Button x:Name="button_addBookmark" Content="Lesezeichen hinzufügen" HorizontalAlignment="Left" VerticalAlignment="Top" Width="133" Height="26" Click="button_addBookmark_Click"/>
+        <ListBox x:Name="listBox_Lesezeichen" HorizontalAlignment="Left" Height="267" Margin="10,10,0,0" VerticalAlignment="Top" Width="378" MouseDoubleClick="listBox_Lesezeichen_MouseDoubleClick"/>
+        <Button x:Name="button_OK" Content="OK" HorizontalAlignment="Left" Margin="40,298,0,0" VerticalAlignment="Top" Width="75" Click="button_OK_Click"/>
+        <Button x:Name="button_loeschen" Content="Löschen" HorizontalAlignment="Left" Margin="280,298,0,0" VerticalAlignment="Top" Width="75" Click="button_loeschen_Click"/>
+
     </Grid>
 </Window>

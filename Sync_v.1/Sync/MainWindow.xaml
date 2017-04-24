@@ -6,39 +6,50 @@
         xmlns:local="clr-namespace:Sync"
         mc:Ignorable="d"
         Title="Sync" Height="710.569" Width="987.762" Loaded="Window_Loaded"
-        ResizeMode="CanMinimize"
+      
         >
     <Grid Background="LightGray">
 
-        <TextBox x:Name="textBox_suchbox" Height="23" Margin="0,47,225,0" TextWrapping="Wrap" VerticalAlignment="Top" BorderThickness="2"/>
-        <Button x:Name="button" Content="Search" Margin="905,47,0,0" VerticalAlignment="Top" Height="23" Click="button_Click"/>
-        <Button x:Name="button_Zurück" Content="&lt;" Margin="755,47,150,0" VerticalAlignment="Top" Height="23" Click="button_Back"/>
-        <Button x:Name="button_Vor" Content="&gt;" Margin="830,47,75,0" VerticalAlignment="Top" Height="23" Click="button_Click_Vor"/>
-        <Button x:Name="button_New_Tab" Content="+" Margin="905,10,0,0" VerticalAlignment="Top" Height="32" Click="button_Click_New_Tab"/>
+        <TextBox x:Name="textBox_suchbox" Height="23" Margin="0,24,225,0" TextWrapping="Wrap" VerticalAlignment="Top" BorderThickness="2"/>
+        <Button x:Name="button" Content="Search" Margin="0,24,2,0" VerticalAlignment="Top" Height="23" Click="button_Click" HorizontalAlignment="Right" Width="112"/>
+        <Button x:Name="button_Zurück" Content="&lt;" Margin="0,24,170,0" VerticalAlignment="Top" Height="23" Click="button_Back" RenderTransformOrigin="-0.4,0.522" HorizontalAlignment="Right" Width="55"/>
+        <Button x:Name="button_Vor" Content="&gt;" Margin="0,24,114,0" VerticalAlignment="Top" Height="23" Click="button_Click_Vor" RenderTransformOrigin="-0.411,0.545" HorizontalAlignment="Right" Width="56"/>
+        <Button x:Name="button_New_Tab" Content="+" Margin="0,48,2,0" VerticalAlignment="Top" Height="23" Click="button_Click_New_Tab" HorizontalAlignment="Right" Width="34"/>
 
-        <TabControl x:Name="tabControl" Margin="0,75,0,0">
+        <TabControl x:Name="tabControl" Margin="0,71,0,4">
             <TabItem
                 x:Name="tabItem1" Header="TabItem">
 
-                <WebBrowser x:Name="Sync_Browser" Margin="-2,-2,-2,84" Navigating="Sync_Browser_Navigating_1"/>
+                <WebBrowser x:Name="Sync_Browser" Margin="-2,-2,-2,2" Navigating="Sync_Browser_Navigating_1"/>
 
             </TabItem>
 
         </TabControl>
-        
-        <Button x:Name="button_Chronik" Content="Chronik" HorizontalAlignment="Left" Margin="863,75,0,0" VerticalAlignment="Top" Width="117" Height="22" Click="button_Chronik_Click"/>
-        <Button x:Name="button1" Content="Lesezeichen hinzufügen" HorizontalAlignment="Left" VerticalAlignment="Top" Width="133" Click="button1_Click"/>
-        <Button x:Name="button_removeBookmark" Content="Lesezeichen entfernen" HorizontalAlignment="Left" Margin="0,20,0,0" VerticalAlignment="Top" Width="133" Click="button_removeBookmark_Click"/>
-        <UserControl>
-        <ListView x:Name="listView_bookmarks" HorizontalAlignment="Left" Height="88" Margin="0,592,0,0" VerticalAlignment="Top" Width="980" MouseDoubleClick="listView_bookmarks_MouseDoubleClick" MouseDown="listView_bookmarks_MouseDown">
-            <ListView.View>
-                <GridView>
-                    <GridViewColumn/>
-                </GridView>
-            </ListView.View>
-        </ListView>
-        </UserControl>
-        <Button x:Name="button_specialbookmark" Content="Spezielles Bookmark hinzufügen" HorizontalAlignment="Left" Margin="171,0,0,0" VerticalAlignment="Top" Width="182" Click="button_specialbookmark_Click"/>
+        <Menu x:Name="menu" Height="20" VerticalAlignment="Top">
+            <MenuItem  Header="Lesezeichen">
+                <MenuItem x:Name="Lesezeichen_hinzufuegen" Header="Lesezeichen hinzufügen" Click="Lesezeichen_hinzufuegen_Click"></MenuItem>
+
+                <MenuItem x:Name="Lesezeichen_anzeigen" Header="Lesezeichen anzeigen" Click="Lesezeichen_zeigen_Click"></MenuItem>
+
+            </MenuItem>
+
+            <MenuItem Header="Spezielles Lesezeichen">
+                <MenuItem x:Name="Spezielles_Lesezeichen_hinzufügen" Header="Spezielles Lesezeichen hinzufügen" Click="Spezielles_Lesezeichen_hinzufuegen"></MenuItem>
+                <MenuItem x:Name="Spezielles_Lesezeichen_anzeigen" Header="Spezielle Lesezeichen anzeigen" Click="Spezielles_Lesezeichen_anzeigen_Click"></MenuItem>
+
+            </MenuItem>
+
+            <MenuItem  Header="Chronik">
+
+                <MenuItem x:Name="Chronik_zeigen" Header="Chronik anzeigen" >
+
+
+                </MenuItem>
+
+            </MenuItem>
+        </Menu>
+        <Button x:Name="button_delete_Tabs" Content="X" HorizontalAlignment="Right" Margin="0,48,36,0" VerticalAlignment="Top" Width="29" Height="23" Click="button_delete_Tabs_Click"/>
+
 
 
     </Grid>

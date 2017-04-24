@@ -10,7 +10,24 @@ namespace Sync
 {
     class Chronik
     {
-        
+        public string Url { get; set; }
+
+        public Chronik(string url)
+        {
+            Url = url;
+        }
+
+       public Chronik()
+        {
+
+        }
+
+        public override string ToString()
+        {
+            return Url;
+        }
+
+      
     }
 }
 
